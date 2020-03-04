@@ -1,19 +1,18 @@
 <template>
     <div>
         <!-- Blackjack -->
-        <blockTitle :name="gameData.blackjack" :view="false"></blockTitle>
+        <blockTitle :name="gameData.liveblackjack" :view="true"></blockTitle>
         <slider>
-            <blockLive :games="gameData.blackjack.data.slice(0, 5)" class="herothree"></blockLive>
-            <blockLive :games="gameData.blackjack.data.slice(5, 10)" class="herothree"></blockLive>
+            <blockLive :games="gameData.liveblackjack.data.slice(0, 5)" class="herothree"></blockLive>
+            <blockLive :games="gameData.liveblackjack.data.slice(5, 10)" class="herothree"></blockLive>
         </slider>
         <!-- Game Show -->
-        <blockTitle :name="gameData.roulette" :view="false"></blockTitle>
+        <blockTitle :name="gameData.liveroulette" :view="true"></blockTitle>
         <slider>
-            <blockLive :games="gameData.roulette.data.slice(0, 5)" class="herothree"></blockLive>
-            <blockLive :games="gameData.roulette.data.slice(5, 10)" class="herothree"></blockLive>
+            <blockLive :games="gameData.liveroulette.data.slice(0, 5)" class="herothree"></blockLive>
+            <blockLive :games="gameData.liveroulette.data.slice(5, 10)" class="herothree"></blockLive>
         </slider>
-        <!-- Roulette -->
-        <blockTitle :name="gameData.blackjack" :view="false"></blockTitle>          
+     
     </div>
 </template>
 

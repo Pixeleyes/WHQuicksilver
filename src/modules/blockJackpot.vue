@@ -13,6 +13,7 @@
 					<div
 						:class="{ new: game.new, exclusive: game.exclusive }"
 						:style="filename(game.name)"
+						@click="opengame()"
 					></div>
 				</li>
 			</ul>
@@ -31,6 +32,9 @@ export default {
 				.toLowerCase()
 				.replace(/[^a-zA-Z0-9_ ]/g, "")
 			return `background-image: url(/tiles/${result}.jpg)`
+		},
+		opengame() {
+			this.$router.push({ path: 'game' })
 		}
 	}
 }

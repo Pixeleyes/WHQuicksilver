@@ -2,7 +2,7 @@
     <div class="title">
         <h2 v-if="!hidetext">{{ name.title }}</h2>
         
-        <div v-if="view" class="viewall" @click="$emit('viewall')">View All</div>
+        <div v-if="view" class="viewall" @click="menuClick(name.link)">View All</div>
         <p v-if="!hidetext">{{name.desc}}</p>
     </div>
 </template>
@@ -11,8 +11,13 @@
 <script>
 
 export default {
-  name: 'blockTitle',
-  props: ['name', 'view', 'hidetext']
+    name: 'blockTitle',
+    props: ['name', 'view', 'hidetext'],
+    methods: {
+        menuClick(name) {
+            this.$router.push({ path: `${name}`}).catch(err => {console.log(err)})
+        }
+    }  
 }
 </script>
 

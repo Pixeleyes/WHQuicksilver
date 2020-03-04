@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import quicksilver from '../views/quicksilver.vue'
+import game from '../views/game.vue'
 
 Vue.use(VueRouter)
 
@@ -11,6 +12,11 @@ const routes = [
     name: 'lobby',
     component: quicksilver
   },
+  {
+    path: '/game',
+    name: 'game',
+    component: game
+  },  
   {
     path: '/:category',
     name: 'category',

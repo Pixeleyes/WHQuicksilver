@@ -9,6 +9,7 @@
 							ref="videoPlayer"
 							:options="playerOptions"
 							:playsinline="true"
+							@click="opengame()"
 							customEventName="customstatechangedeventname"
 						>
 						</video-player>
@@ -21,6 +22,7 @@
 					<div
 						:class="{ new: game.new, exclusive: game.exclusive }" 
 						:style="filename(game.name)"
+						@click="opengame()"
 					>
 					</div>
 				</li>
@@ -77,6 +79,9 @@ export default {
 			if (this.player.paused()) {
 				this.player.play()
 			}
+		},
+		opengame() {
+			this.$router.push({ path: 'game' })
 		}
 	}
 }

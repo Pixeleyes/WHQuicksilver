@@ -25,7 +25,12 @@
 
             <category-live :gameData="gameData" v-if="currentCat === 'live' && !activeSub"></category-live>
 
-            <div v-if="activeSub && activeSub != 'featured'">
+            <category-table :gameData="gameData" v-if="currentCat === 'table' && !activeSub"></category-table>
+
+            <category-az :gameData="gameData" v-if="currentCat === 'az' && !activeSub"></category-az>
+
+
+            <div v-if="activeSub && activeSub != 'featured' || activeSub && activeSub != 'az'">
                 <blockTitle :name="gameData[activeSub]" :view="false"></blockTitle>					
                 <div class="quickgame">
                     <div v-for="game in gameData[activeSub].data" v-bind:key="game.name" :style="filename(game.name)">
@@ -60,6 +65,8 @@ import categoryFeatured from "@/views/categories/featured";
 import categorySlots from "@/views/categories/slots";
 import categoryJackpots from "@/views/categories/jackpots";
 import categoryLive from "@/views/categories/live";
+import categoryTable from "@/views/categories/table";
+import categoryAz from "@/views/categories/az";
 
 
 
@@ -74,7 +81,9 @@ export default {
         categoryFeatured,
         categorySlots,
         categoryJackpots,
-        categoryLive
+        categoryLive,
+        categoryTable,
+        categoryAz
 	},
 	data() {
 		return {

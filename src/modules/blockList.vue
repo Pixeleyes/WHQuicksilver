@@ -2,7 +2,7 @@
   <div class="carousel-cell">
     <div class="block-header-list">
       <ul>
-        <li v-for="game in games" v-bind:key="game.name">
+        <li v-for="game in games" v-bind:key="game.name" @click="opengame()">
           <div :style="filename(game.name)" :class="{ new: game.new, exclusive: game.exclusive }" class="image"></div>
           <div class="text">
             <h5>Game Description &amp; Tags</h5>
@@ -25,7 +25,10 @@ export default {
         .toLowerCase()
         .replace(/[^a-zA-Z0-9_ ]/g, "");
       return `background-image: url(/tiles/${result}.jpg)`;
-    }
+    },
+		opengame() {
+			this.$router.push({ path: 'game' })
+		}
   }
 };
 </script>

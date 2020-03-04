@@ -17,6 +17,7 @@
 export default {
     name: "titleNav"
 }
+
 </script>
 
 <style scoped lang="scss">

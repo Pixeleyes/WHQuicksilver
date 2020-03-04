@@ -13,8 +13,7 @@ export default {
             { title: 'Featured', slug: 'featured', width: 80 },
             { title: 'Exclusives', slug: 'exclusives', width: 80 },
             { title: 'Popular', slug: 'popular', width: 80 },
-            { title: 'Multi-Line', slug: 'multiline', width: 90 },
-            { title: 'A-Z', slug: 'az', width: 50 }
+            { title: 'Multi-Line', slug: 'multiline', width: 90 }
         ]
     },
     jackpots: {
