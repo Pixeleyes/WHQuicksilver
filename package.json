@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "vue-cli-service s3-deploy"
   },
   "dependencies": {
     "core-js": "^3.6.4",
@@ -21,7 +22,10 @@
     "eslint-plugin-vue": "^6.1.2",
     "sass": "^1.25.0",
     "sass-loader": "^8.0.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-cli-plugin-s3-deploy": "^4.0.0-rc3",
+    "vue-template-compiler": "^2.6.11",
+    "vue-flickity": "^1.2.1",
+    "vue-video-player": "^5.0.2"
   },
   "eslintConfig": {
     "root": true,

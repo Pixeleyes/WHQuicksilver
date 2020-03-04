@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>Account</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4.0-Horse-Racing---Home-Page" transform="translate(-175.000000, -21.000000)" fill="#FFFFFF">
+            <g id="M/Header_375/Logged-In">
+                <g id="WH-Header/parts/Buttons/Logged-in">
+                    <g transform="translate(160.000000, 12.000000)">
+                        <g id="Buttons/Logged-in" transform="translate(7.000000, 0.000000)">
+                            <g id="Button">
+                                <g id="Icon" transform="translate(8.000000, 9.000000)">
+                                    <path d="M5,5.78947368 C6.21499996,5.78947368 6.99999993,4.83157895 6.99999993,2.89473684 C6.99999993,0.957894737 6.21499996,0 5,0 C3.78500004,0 3.00000007,0.973684211 3.00000007,2.91052632 C3.00000007,4.84736842 3.78500004,5.78947368 5,5.78947368 Z M8.81999987,7.84736842 L6.74499994,6.86315789 C5.66611094,7.53686589 4.32388906,7.53686589 3.24500006,6.86315789 L1.18000013,7.86315789 C0.461631254,8.20307428 -0.000326244032,8.95514606 1.72870354e-07,9.78421053 L1.72870354e-07,10 L9.99999983,10 L9.99999983,9.78421053 C10.0003262,8.95514606 9.53836875,8.20307428 8.81999987,7.86315789 L8.81999987,7.84736842 Z" id="Account"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

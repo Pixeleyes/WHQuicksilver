@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>i_call copy 37</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M3.6,3.6 L3.6,6.3 L5.5472,5.4 L9,5.4 C6.3,7.2 4.5064,8.164 4.4368,10.8 L4.4368,10.8 L8.1144,10.8 C8.1144,10.8 8.1,9.0704 8.1,9 L8.1,9 C8.1,7.4736 9.0648,6.856 10.8,5.26 L10.8,5.26 L10.8,3.6 L3.6,3.6 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.0-M-Search---Main-lobby" transform="translate(-282.000000, -578.000000)">
+            <g id="Themes" transform="translate(12.000000, 413.000000)">
+                <g transform="translate(0.000000, 30.000000)" id="i_call-copy-37">
+                    <g transform="translate(270.000000, 135.000000)">
+                        <rect id="bounding" x="0" y="0" width="54" height="54"></rect>
+                        <g id="Group-9" transform="translate(3.600000, 7.200000)" fill="#528AE1">
+                            <path d="M14.4,37.95 C14.4,38.8575 13.59,39.6 12.6,39.6 L1.8,39.6 C0.81,39.6 0,38.8575 0,37.95 L0,1.65 C0,0.7425 0.81,0 1.8,0 L12.6,0 C13.59,0 14.4,0.7425 14.4,1.65 L14.4,37.95 Z" id="Fill-1"></path>
+                        </g>
+                        <g id="Group-8" transform="translate(19.800000, 7.200000)" fill="#78A6EC">
+                            <path d="M14.4,37.9833 C14.4,38.8908 13.59,39.6333 12.6,39.6333 L1.8,39.6333 C0.81,39.6333 0,38.8908 0,37.9833 L0,1.6833 C0,0.7758 0.81,0.0333 1.8,0.0333 L12.6,0.0333 C13.59,0.0333 14.4,0.7758 14.4,1.6833 L14.4,19.446375 L14.4,37.9833 Z" id="Fill-7"></path>
+                        </g>
+                        <g id="Group-7" transform="translate(3.600000, 7.200000)">
+                            <path d="M46.8,37.95 C46.8,38.8575 45.99,39.6 45,39.6 L34.2,39.6 C33.21,39.6 32.4,38.8575 32.4,37.95 L32.4,1.65 C32.4,0.7425 33.21,0 34.2,0 L45,0 C45.99,0 46.8,0.7425 46.8,1.65 L46.8,37.95 Z" id="Fill-9" fill="#8CB8FF"></path>
+                            <g id="Group-6" transform="translate(0.000000, 14.400000)">
+                                <rect id="Rectangle" fill="#759DEB" fill-rule="nonzero" x="0" y="0" width="14.4" height="14.4" rx="1"></rect>
+                                <rect id="Rectangle" stroke="#F3F7FF" stroke-width="2" stroke-linejoin="round" fill-rule="nonzero" x="0" y="0" width="14.4" height="14.4" rx="1"></rect>
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Clip-14" fill="#FFFFFF" xlink:href="#path-1"></use>
+                            </g>
+                        </g>
+                        <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" opacity="0.200000003" x="8.1" y="13.5" width="5.4" height="3.6" rx="1.8"></rect>
+                        <rect id="Rectangle-Copy" fill="#FFFFFF" fill-rule="nonzero" opacity="0.200000003" x="40.5" y="26.1" width="5.4" height="3.6" rx="1.8"></rect>
+                        <rect id="Rectangle-Copy-2" fill="#FFFFFF" fill-rule="nonzero" opacity="0.200000003" x="8.1" y="38.7" width="5.4" height="3.6" rx="1.8"></rect>
+                        <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" opacity="0.200000003" x="24.3" y="13.5" width="5.4" height="3.6" rx="1.8"></rect>
+                        <rect id="Rectangle-Copy" fill="#FFFFFF" fill-rule="nonzero" opacity="0.200000003" x="24.3" y="26.1" width="5.4" height="3.6" rx="1.8"></rect>
+                        <rect id="Rectangle-Copy-2" fill="#FFFFFF" fill-rule="nonzero" opacity="0.200000003" x="24.3" y="38.7" width="5.4" height="3.6" rx="1.8"></rect>
+                        <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" opacity="0.200000003" x="40.5" y="13.5" width="5.4" height="3.6" rx="1.8"></rect>
+                        <rect id="Rectangle-Copy-2" fill="#FFFFFF" fill-rule="nonzero" opacity="0.200000003" x="40.5" y="38.7" width="5.4" height="3.6" rx="1.8"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
