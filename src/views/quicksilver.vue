@@ -4,7 +4,8 @@
             <titleNav></titleNav>
 			<mainNav 
                 :items="menuData" 
-                :active="currentCat" 
+                :active="currentCat"
+                :light="false"
                 @game="navGoto($event)">
             </mainNav>
             <subNav
@@ -180,10 +181,18 @@ export default {
         background-size: 100% 100%;
         position: fixed;
         bottom: 0;
+        max-width: 500px;
         z-index: 1000000;
-        padding-top: calc(45 / 375 * 100%);
+        height: 60px;
     }   
 }
 
+@media only screen and (max-width: 440px) {
 
+    .wrapper {
+        .footer {
+            height: 45px;
+        }   
+    }
+}
 </style>

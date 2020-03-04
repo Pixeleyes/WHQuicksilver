@@ -78,7 +78,6 @@ export default {
   },
   methods: {
     menuClick(name) {
-      console.log(name)
     if (name === 'featured') {
       this.$router.push({ path: `/` }).catch(err => {console.log(err)})
     } else {

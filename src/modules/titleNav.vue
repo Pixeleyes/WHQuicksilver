@@ -23,6 +23,40 @@ export default {
 <style scoped lang="scss">
 @import "@/style/global.scss";
 
+
+.titleblock.light {
+
+    .titlebg {
+        background: white!important;
+    }
+
+    .bg {
+        background: white!important;
+
+        .rule {
+            border-bottom: 1px solid #d7e3ff;
+        }        
+    }
+    .toptitle {
+
+        padding: 16px 12px 10px 12px;
+        color:white;
+        grid-area: content;
+
+        h2 {
+            color: #2e4068;
+        }
+        .breadcrumb {
+            color: #546d91;
+
+            &:before {
+                background-color: #546d91;
+            }
+
+        }
+    } 
+}
+
 .titleblock {
 	display: grid;
 	grid-template-columns: 100%;
