@@ -26,6 +26,7 @@
 html {
   padding: 0;
   margin: 0;
+  background: #394150;
 }
 
 /* Resets */

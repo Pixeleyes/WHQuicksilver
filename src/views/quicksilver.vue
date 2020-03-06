@@ -30,14 +30,20 @@
 
             <category-az :gameData="gameData" v-if="currentCat === 'az' && !activeSub"></category-az>
 
-
-            <div v-if="activeSub && activeSub != 'featured' || activeSub && activeSub != 'az'">
-                <blockTitle :name="gameData[activeSub]" :view="false"></blockTitle>					
-                <div class="quickgame">
-                    <div v-for="game in gameData[activeSub].data" v-bind:key="game.name" :style="filename(game.name)">
+            <transition v-on:enter="qsEnter" appear v-bind:css="false">
+                <div class="uniq" :key="gameData[activeSub]" v-if="activeSub && activeSub != 'featured' || activeSub && activeSub != 'az'">
+                    <blockTitle :name="gameData[activeSub]" :view="false"></blockTitle>					
+                    <div class="quickgame" ref="uniq">
+                        <div 
+                            v-for="game in gameData[activeSub].data" 
+                            v-bind:key="game.name" 
+                            :style="filename(game.name)"
+                            @click="opengame()"
+                        >
+                        </div>
                     </div>
                 </div>
-            </div>
+            </transition>
 
 
 
@@ -51,6 +57,8 @@
 </template>
 
 <script>
+import anime from "animejs/lib/anime.es.js";
+
 import mainNav from "@/modules/mainNav"
 import subNav from "@/modules/subNav"
 import titleNav from "@/modules/titleNav"
@@ -95,6 +103,7 @@ export default {
             gameData: gameData,
             jackpotData: jackpotData,
             menuData: menuData,
+            loginAnimation: null
 		}
 	},
 	mounted() {
@@ -126,6 +135,9 @@ export default {
             this.currentCat = e
             this.currentSub = this.menuData[e].sub
         },
+		opengame() {
+            this.$router.push({ path: `/game`}).catch(err => {console.log(err)})
+		},
 		filename(str) {
 			let result = str.replace(/ /g,"_").toLowerCase().replace(/[^a-zA-Z0-9_ ]/g, "");
 			return `background-image: url(/tiles/${result}.jpg)`;
@@ -138,6 +150,25 @@ export default {
         },        
         searchString() {
             return (this.currentSub.search ? this.currentSub.search : null);
+        },
+        // BACKGROUND PANEL ANIMATION
+        qsEnter(el, done) {
+            this.loginAnimation = anime.timeline({
+                loop: false,
+                update: (anim) => {
+                    if (anim.progress === 100) {
+                        done();
+                    }
+                }
+            })
+            this.loginAnimation.add({
+                targets: this.$refs.uniq.children,
+                scale: [0, 1],
+                opacity: [0, 1],
+                easing: 'easeOutSine',
+                delay: anime.stagger(200, {easing: 'easeInQuad'}),
+                duration: 400,
+            })
         }
 	}
 }
@@ -185,6 +216,10 @@ export default {
         z-index: 1000000;
         height: 60px;
     }   
+}
+
+.uniq {
+    margin-bottom:92px;
 }
 
 @media only screen and (max-width: 440px) {

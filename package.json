@@ -9,6 +9,7 @@
     "deploy": "vue-cli-service s3-deploy"
   },
   "dependencies": {
+    "animejs": "^3.1.0",
     "core-js": "^3.6.4",
     "vue": "^2.6.11",
     "vue-router": "^3.1.5"
@@ -23,8 +24,8 @@
     "sass": "^1.25.0",
     "sass-loader": "^8.0.2",
     "vue-cli-plugin-s3-deploy": "^4.0.0-rc3",
-    "vue-template-compiler": "^2.6.11",
     "vue-flickity": "^1.2.1",
+    "vue-template-compiler": "^2.6.11",
     "vue-video-player": "^5.0.2"
   },
   "eslintConfig": {
